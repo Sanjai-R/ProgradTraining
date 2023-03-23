@@ -4,21 +4,27 @@ namespace Basics
 {
     internal class ExceptionHandling
     {
-        public static void UserDefinedException()
+       static void Main(string[] args)
         {
-            int x = 5, y = 0;
-            int z;
+            int age = Convert.ToInt32(Console.ReadLine());
             try
             {
-                z = x / y;
-            }catch (Exception e) {
-                Console.WriteLine(e);
-                    }
-            finally
-            {
-
+                if (age < 18) {
+                    throw new UserDefinedException("you're not eligible to vote");
+                }
+            }catch (IndexOutOfRangeException ex) {
+                Console.WriteLine(ex.Message);
             }
+            catch(UserDefinedException ex)
+            {
+                Console.WriteLine("Not Allowed To Vote!! \n" + "Error Message : " + ex.Message);
+            }
+            finally { Console.WriteLine("Finally called"); }
         }
-        
+        public class UserDefinedException : Exception
+        {
+            public UserDefinedException(string message) : base(message) { }
+
+        }
     }
 }
