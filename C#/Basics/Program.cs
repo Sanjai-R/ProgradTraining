@@ -2,9 +2,9 @@
 
 class Basic
 {
-    static void Main(string[] args)
+    static void main(string[] args)
     {
-        var p1 = new ClassBasic("Sanjai");
 
+        Console.WriteLine("hey");
     }
 }
