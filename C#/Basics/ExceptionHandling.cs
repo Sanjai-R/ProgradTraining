@@ -4,9 +4,9 @@ namespace Basics
 {
     internal class ExceptionHandling
     {
-       static void Main(string[] args)
+        static void Main(string[] args)
         {
-            
+
             int a = 10;
             int b = 0;
             int[] arr = { 1, 2, 3, 4 };
@@ -20,11 +20,12 @@ namespace Basics
                 Console.WriteLine(de.Message);
                 Console.WriteLine("you cannot divide a num by zero");
             }
-            catch (IndexOutOfRangeException ex) {
+            catch (IndexOutOfRangeException ex)
+            {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("you're trying to access array element out of range");
             }
-            
+
             finally { Console.WriteLine("Finally called"); }
 
 
