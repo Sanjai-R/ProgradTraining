@@ -64,6 +64,9 @@ namespace Basics
                 Console.WriteLine(queue1.Dequeue() + " | ");
 
             }
+            Console.WriteLine("Linked List");
+            LinkedList<int> llst = new LinkedList<int>();
+            llst.AddLast(2);
         }
     }
 }

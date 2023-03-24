@@ -8,7 +8,7 @@ namespace ProblemSolving
 {
     internal class CalendarMan
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
 
             Console.WriteLine("Enter your birthdate (DD/MM/YYYY) format:");
