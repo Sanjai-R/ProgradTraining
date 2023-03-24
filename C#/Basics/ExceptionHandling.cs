@@ -6,20 +6,44 @@ namespace Basics
     {
        static void Main(string[] args)
         {
+            
+            int a = 10;
+            int b = 0;
+            int[] arr = { 1, 2, 3, 4 };
+            try
+            {
+                int c = arr[4];
+                int d = a / b;
+            }
+            catch (DivideByZeroException de)
+            {
+                Console.WriteLine(de.Message);
+                Console.WriteLine("you cannot divide a num by zero");
+            }
+            catch (IndexOutOfRangeException ex) {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("you're trying to access array element out of range");
+            }
+            
+            finally { Console.WriteLine("Finally called"); }
+
+
             int age = Convert.ToInt32(Console.ReadLine());
             try
             {
-                if (age < 18) {
-                    throw new UserDefinedException("you're not eligible to vote");
+                if (age < 18)
+                {
+                    throw new UserDefinedException("You're not eligible for voting");
                 }
-            }catch (IndexOutOfRangeException ex) {
+                else
+                {
+                    Console.WriteLine("Welcome! you passed the age restriction");
+                }
+            }
+            catch (UserDefinedException ex)
+            {
                 Console.WriteLine(ex.Message);
             }
-            catch(UserDefinedException ex)
-            {
-                Console.WriteLine("Not Allowed To Vote!! \n" + "Error Message : " + ex.Message);
-            }
-            finally { Console.WriteLine("Finally called"); }
         }
         public class UserDefinedException : Exception
         {

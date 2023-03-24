@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace Basics
 {
-   
+
     internal class ClassBasic
     {
         string name;
