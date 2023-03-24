@@ -8,7 +8,7 @@ namespace ProblemSolving
 {
     internal class exchangeString
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
 
             string name;
