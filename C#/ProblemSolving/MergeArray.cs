@@ -10,7 +10,7 @@ namespace ProblemSolving
         static int[] arr1 = { 7, 18, 17, 3 };
         static int[] arr2 = { 22, 29, 21, 2 };
         static int[] mergedArr = new int[arr1.Length + arr2.Length];
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             Merge();
             Array.Sort(mergedArr);
