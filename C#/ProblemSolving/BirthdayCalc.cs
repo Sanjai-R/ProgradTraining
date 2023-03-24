@@ -11,12 +11,11 @@ namespace ProblemSolving
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter your birthdate (MM/DD/YYYY):");
+            Console.WriteLine("Enter your birthdate (DD/MM/YYYY) format:");
             DateTime date = DateTime.Parse(Console.ReadLine());
             int age = new DateTime(DateTime.Now.Subtract(date).Ticks).Year - 1;
 
             Console.WriteLine($"You are {age} years old.");
-
          
         }
     }
