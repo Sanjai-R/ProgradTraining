@@ -8,7 +8,7 @@ namespace ProblemSolving
 {
     internal class CheckOk
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             Console.WriteLine("Enter a string:");
             string inputString = Console.ReadLine();

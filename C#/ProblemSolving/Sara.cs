@@ -9,13 +9,13 @@ namespace ProblemSolving
 {
     internal class Sara
     {
-       static List<string> lst = new List<string>();
+        static List<string> lst = new List<string>();
         static void main(string[] args)
         {
 
             while (true)
             {
-                
+
                 Console.WriteLine(@"SELECT any option sara
                 a) Creating Qn
                 b) Display qn
@@ -41,7 +41,7 @@ namespace ProblemSolving
                 }
             }
 
-            
+
             static void CreateQuestions()
             {
                 Console.WriteLine("Write a qn Sara:");
@@ -50,7 +50,7 @@ namespace ProblemSolving
             }
             static void DisplayQuestions()
             {
-                foreach(var i in lst)
+                foreach (var i in lst)
                 {
                     Console.WriteLine(i);
                 }
@@ -60,14 +60,14 @@ namespace ProblemSolving
             {
                 string[] ans = new string[lst.Count];
                 int start = 0;
-                int  introvert = 0, extrovert = 0;
+                int introvert = 0, extrovert = 0;
                 foreach (var qn in lst)
                 {
                     Console.WriteLine(qn);
                     string a = Console.ReadLine();
                     ans[start++] = qn;
                 }
-                for(int i = 0; i < start; i++)
+                for (int i = 0; i < start; i++)
                 {
                     if (ans[i] == "yeah")
                     {
@@ -76,10 +76,10 @@ namespace ProblemSolving
                     else
                     {
                         extrovert++;
-                      
+
                     }
                 }
-                if(extrovert > introvert)
+                if (extrovert > introvert)
                 {
                     Console.WriteLine("You're an Extrovert Kinda person");
                 }
@@ -88,7 +88,7 @@ namespace ProblemSolving
                     Console.WriteLine("You're an Introvert Kinda person");
 
                 }
-               
+
             }
 
         }

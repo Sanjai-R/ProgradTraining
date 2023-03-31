@@ -28,6 +28,6 @@
             Console.WriteLine("Enter your birth month (1-12):");
             int month = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Your zodiac sign is {monthsZodiac[month]} and your partner is {zodiacGOT[monthsZodiac[month]]}.");
-            }
+        }
     }
 }

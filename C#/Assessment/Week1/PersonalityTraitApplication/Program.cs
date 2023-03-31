@@ -21,8 +21,8 @@
                         PersonalityCheck.start(); ;
                         break;
                     case "b":
-                        ZodiacSign.start(); 
-                        break;    
+                        ZodiacSign.start();
+                        break;
                     case "c":
                         BirthdayCalc.start(); ;
                         break;
@@ -33,8 +33,8 @@
                         break;
                 }
             }
-            
-           
+
+
         }
     }
 }
