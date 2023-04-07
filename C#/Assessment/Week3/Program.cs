@@ -1,11 +1,10 @@
-﻿namespace Problems
+﻿namespace Week3
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            // Cards.start();
-            Encryption.nicoCipher();
+            CollegeSportsMgtSystem.Start();
         }
     }
 }

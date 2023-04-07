@@ -17,7 +17,6 @@ namespace Problems
         static bool checkFlush(string[] lst) //all card have same suit
         {
             var suits = lst[0][lst[0].Length - 1];
-
             foreach (var i in lst)
             {
                 if (i[i.Length - 1] != suits)
@@ -43,8 +42,7 @@ namespace Problems
                     counts[GetCardRank(elem)] = 1;
                 }
             }
-
-            return counts.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+            return counts;
         }
 
         public static bool CheckStraight(string[] lst) //All card have same sequence
@@ -189,7 +187,7 @@ namespace Problems
 
         public static void start()
         {
-            string[] arr = { "3h", "5h", "Qs", "9h", "Ad" };
+            string[] arr = { "5d", "5h", "5c", "7d", "7s" };
             Console.WriteLine(PokerHandRanking(arr));
         }
     }
